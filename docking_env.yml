@@ -1,0 +1,22 @@
+name: docking_env
+channels:
+  - conda-forge
+  - defaults
+  - bioconda
+dependencies:
+  - python=3.11
+  - conda-forge::pymol-open-source
+  - pip
+  - cctbx-base
+  - pdbfixer=1.10
+  - reduce=4.14
+  - biopython=1.84
+  - openmm=8.2.0
+  - pandas=2.1.4
+  - prody
+  - spyrmsd=0.9.0
+  - biotite==1.0.1
+  - meeko==0.6.1
+  - rdkit==2024.3.5
+  - scipy==1.15.2
+  - openbabel==3.1.1

@@ -1,0 +1,6 @@
+system_id,ligand_id,true_metal,error
+4ae3__1__1.A__1.B_1.C,1.B,Mg,Crystal ligand PDBQT contains no atoms; ligand conversion failed: probe_inputs/4ae3__1__1.A__1.B_1.C/1.B_crystal.pdbqt
+6m6d__1__2.A__2.B_2.C,2.C,Co,Crystal ligand PDBQT contains no atoms; ligand conversion failed: probe_inputs/6m6d__1__2.A__2.B_2.C/2.C_crystal.pdbqt
+3mjx__1__1.A__1.B_1.C,1.B,Mg,Crystal ligand PDBQT contains no atoms; ligand conversion failed: probe_inputs/3mjx__1__1.A__1.B_1.C/1.B_crystal.pdbqt
+3mnq__1__1.A__1.B_1.C,1.B,Mg,Crystal ligand PDBQT contains no atoms; ligand conversion failed: probe_inputs/3mnq__1__1.A__1.B_1.C/1.B_crystal.pdbqt
+8i2u__1__2.A__2.B_2.C,2.C,Co,Crystal ligand PDBQT contains no atoms; ligand conversion failed: probe_inputs/8i2u__1__2.A__2.B_2.C/2.C_crystal.pdbqt

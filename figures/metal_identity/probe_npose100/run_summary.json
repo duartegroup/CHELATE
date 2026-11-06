@@ -1,0 +1,101 @@
+{
+  "candidate_protocol": {
+    "ranked_metals": [
+      "Mn",
+      "Co",
+      "K",
+      "Cu",
+      "Mg",
+      "Zn",
+      "Fe",
+      "Ni",
+      "Ca",
+      "Na"
+    ],
+    "ranked_candidate_count": 10,
+    "uniform_top1_chance": 0.1,
+    "ALL_ZERO_is_ranked_in_primary_metric": false,
+    "ALL_ZERO_role": "separate zero-metal control"
+  },
+  "timestamp": "2026-10-27T20:30:50",
+  "model_path": "model/params/VINA_rmsd=1.0_best_model.cbm",
+  "feature_count": 210,
+  "pose_idx": 1,
+  "n_poses": 100,
+  "pose_rank_norm": 0.01,
+  "counts": {
+    "test_unique_system_ligands": 156,
+    "eligible_system_ligands_before_cap": 133,
+    "eligible_system_ligands": 133,
+    "excluded_system_ligands": 23,
+    "max_systems_cap_applied": 0,
+    "excluded_missing_system_directory": 14,
+    "excluded_multi_metal_system": 7,
+    "excluded_true_metal_not_explicit_onehot": 2
+  },
+  "successful_systems": 128,
+  "failed_systems_after_filtering": 5,
+  "global_metrics": {
+    "n_systems": 128,
+    "accuracy": 0.1171875,
+    "mean_true_rank": 4.5625,
+    "top3_accuracy": 0.4609375
+  },
+  "bootstrap": {
+    "ci_pct": 95.0,
+    "n_bootstrap": 1000,
+    "metrics": {
+      "accuracy": {
+        "mean": 0.1181171875,
+        "std": 0.029060860798866467,
+        "ci_lower": 0.0625,
+        "ci_upper": 0.1796875
+      },
+      "mean_true_rank": {
+        "mean": 4.5551875,
+        "std": 0.25983110124054626,
+        "ci_lower": 4.0779296875,
+        "ci_upper": 5.0703125
+      },
+      "top3_accuracy": {
+        "mean": 0.4630703125,
+        "std": 0.0447735124759449,
+        "ci_lower": 0.375,
+        "ci_upper": 0.546875
+      },
+      "mean_true_pred_mbg_rmsd": {
+        "mean": 0.7286955289103902,
+        "std": 0.020375321008446377,
+        "ci_lower": 0.6891947250206854,
+        "ci_upper": 0.7699896023087279
+      },
+      "mean_all_zero_pred_mbg_rmsd": {
+        "mean": 0.7258872791093636,
+        "std": 0.01953628317226244,
+        "ci_lower": 0.6890861726757962,
+        "ci_upper": 0.765088887898538
+      },
+      "mean_true_vs_all_zero_diff": {
+        "mean": 0.0028082498010267884,
+        "std": 0.004123829769414224,
+        "ci_lower": -0.004954005072411707,
+        "ci_upper": 0.01072201799240896
+      },
+      "frac_true_better_than_all_zero": {
+        "mean": 0.5018203125,
+        "std": 0.043998118273638635,
+        "ci_lower": 0.4140625,
+        "ci_upper": 0.5859375
+      }
+    }
+  },
+  "outputs": {
+    "eligible_csv": "eligible_systems.csv",
+    "excluded_csv": "excluded_systems.csv",
+    "predictions_csv": "metal_identity_predictions_long.csv",
+    "system_summary_csv": "system_prediction_summary.csv",
+    "per_true_metal_csv": "per_true_metal_accuracy.csv",
+    "errors_csv": "system_errors.csv",
+    "all_zero_report_csv": "all_zero_probe_report.csv"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "VINA": 0.8,
+  "SMINA": 0.85,
+  "GNINA": 0.8,
+  "rule": "Highest validation top-1 MBG success among retained systems, subject to retained fraction >= 0.5; exact ties go to the larger prediction cutoff.",
+  "validation": {
+    "VINA": {
+      "method": "VINA",
+      "pred_cutoff": 0.8,
+      "n_systems": 880,
+      "n_retained": 462,
+      "n_successful": 154,
+      "retained_fraction": 0.525,
+      "sr_retained": 0.3333333333333333,
+      "sr_all_systems": 0.175,
+      "baseline_sr": 0.2375
+    },
+    "SMINA": {
+      "method": "SMINA",
+      "pred_cutoff": 0.85,
+      "n_systems": 859,
+      "n_retained": 507,
+      "n_successful": 190,
+      "retained_fraction": 0.590221187427241,
+      "sr_retained": 0.3747534516765286,
+      "sr_all_systems": 0.22118742724097787,
+      "baseline_sr": 0.239813736903376
+    },
+    "GNINA": {
+      "method": "GNINA",
+      "pred_cutoff": 0.8,
+      "n_systems": 901,
+      "n_retained": 528,
+      "n_successful": 191,
+      "retained_fraction": 0.586015538290788,
+      "sr_retained": 0.36174242424242425,
+      "sr_all_systems": 0.21198668146503885,
+      "baseline_sr": 0.25749167591564925
+    }
+  },
+  "provenance": {
+    "VINA": {
+      "seed": 42,
+      "task_type": "CPU",
+      "train_pairs": 3115,
+      "validation_pairs": 880,
+      "train_only_model_sha256": "559a95d2b145388e72e5e6aca629a93dae6f7ac3a085889fb0166b87f8e68ec8",
+      "hyperparameters_sha256": "cb32bdd1bbb92b5d94ee0a33d83df7b713ba83e8dd08db2a6b6fef82fb8d7f7f",
+      "feature_sha256": {
+        "train": "0d69c47bd7e91b28fb867ea1018a60e5f6a5d08ee65aaa6f88b9b4588b5a4cb5",
+        "val": "25e57ece13580ee62ec13232310a8e51f63310e2c3c43a87b28c786a11b6fd6c"
+      }
+    },
+    "SMINA": {
+      "seed": 42,
+      "task_type": "CPU",
+      "train_pairs": 3081,
+      "validation_pairs": 859,
+      "train_only_model_sha256": "a2e3f98c873dfdc31739a54afd7a79884294f04259d0e2eb341ff2a6a3ecbbf7",
+      "hyperparameters_sha256": "33a9e162bb5c8b6e47868444d6d9eb2ca145ea9513ba97ff0ad44efdd308570a",
+      "feature_sha256": {
+        "train": "9cd4641a3c5921459718b37ab4d10016fb91d6dbba56fcd7052b7cf98837bc12",
+        "val": "aa8683539bf81317ddb24e324c92411ffd6b63bcb0a1df339899d3d71515b122"
+      }
+    },
+    "GNINA": {
+      "seed": 42,
+      "task_type": "CPU",
+      "train_pairs": 3367,
+      "validation_pairs": 901,
+      "train_only_model_sha256": "a1a85632349b22cd9a28be5d5acbe0c2dc84d7cd5e6d6f63b967071f76b60ef4",
+      "hyperparameters_sha256": "dc3a759cd5590e0d3074304c838d9dc02cc163893bd74f48c88c6f5799244522",
+      "feature_sha256": {
+        "train": "c8b345f979841a20fe6e26a52d263e37b71c7d5ee1795bbe9ebccabbcde2394e",
+        "val": "14e1798b52cf99593043832350c6f22585d7baeb591c442836c42bb75d320aa9"
+      }
+    }
+  },
+  "test_used": false,
+  "final_models_changed": false
+}

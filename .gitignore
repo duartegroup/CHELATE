@@ -1,0 +1,32 @@
+pdb_files/
+ARC/
+__pycache__/
+.DS_Store
+*.png
+!assets/logo.png
+*.jpg
+cached_min_distances.json
+dataset_exploration.ipynb
+test_rcsb_api.ipynb
+*.egg-info/
+.coverage
+coverage.xml
+.pytest_cache/
+catboost_info/
+
+# Local environments and the run state of pipeline scripts
+.envs/
+.runtime/
+
+# Parsed docking results and their archives (large; published on Zenodo)
+docking/results/
+
+# Evaluation outputs (model/test_eval.py, model/distance_baseline.py)
+model/model_out*/
+
+# Figure notebooks: regenerated outputs and large local caches (see figures/README.md)
+figures/*/plots/
+figures/*/figures/
+figures/**/executed*.ipynb
+figures/dataset/metal_ligand_distances_cache.pkl
+figures/benchmark/unseen_systems/

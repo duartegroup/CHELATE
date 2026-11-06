@@ -1,0 +1,17 @@
+{
+  "chelation_keys": 40044,
+  "distance_rows": 772790,
+  "nonperiodic_cartesian": true,
+  "files": {
+    "chelation_cache.pkl": {
+      "sha256": "ff6f8adc40b77623fd635ad6ce0b10a26e26b56cf5318d784eb012949ee9e74d",
+      "size_bytes": 3449661
+    },
+    "metal_ligand_distances_cache.pkl": {
+      "sha256": "1ed0ff30cfa49d857e524910fc9c2c999d0accaedbc704b787354d8ec56106b1",
+      "size_bytes": 31903856
+    }
+  },
+  "source": "figures/dataset/build_dataset_caches.py, PLINDER 2024-06/v2 assembled structures",
+  "distance_cache_in_git": false
+}

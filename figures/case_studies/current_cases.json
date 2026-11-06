@@ -1,0 +1,62 @@
+{
+  "description": "The four cross-docked examples of Figure 5 (run 1 of each docking program, at its selected prediction cutoff).",
+  "cases": [
+    {
+      "folder": "01_1z4k",
+      "pdb_id": "1Z4K",
+      "apo_pdb_id": "4L6A",
+      "apo_chain": "A",
+      "system_id": "1z4k__1__2.A__2.B_2.C",
+      "ligand_id": "2.C",
+      "method": "GNINA",
+      "metal": "Mg",
+      "resolution_A": 1.75,
+      "protein_name": "Human mitochondrial deoxyribonucleotidase"
+    },
+    {
+      "folder": "02_2ggx",
+      "pdb_id": "2GGX",
+      "apo_pdb_id": "1B08",
+      "apo_chain": "B",
+      "system_id": "2ggx__1__1.B__1.H_1.K",
+      "ligand_id": "1.K",
+      "method": "VINA",
+      "metal": "Ca",
+      "resolution_A": 1.9,
+      "protein_name": "Pulmonary surfactant-associated protein D"
+    },
+    {
+      "folder": "03_3by0",
+      "pdb_id": "3BY0",
+      "apo_pdb_id": "3FW5",
+      "apo_chain": "A",
+      "system_id": "3by0__1__1.A__1.D_1.F_1.G_1.H",
+      "ligand_id": "1.F",
+      "ligand_ccd_code": "DBS",
+      "method": "GNINA",
+      "metal": "Fe",
+      "resolution_A": 2.57,
+      "protein_name": "Human neutrophil gelatinase-associated lipocalin (siderocalin/NGAL; W79A/R81A)",
+      "metadata_sources": {
+        "protein_name_and_resolution": "https://www.rcsb.org/structure/3BY0",
+        "apo_chain": "https://www.rcsb.org/structure/3FW5"
+      }
+    },
+    {
+      "folder": "04_3eck",
+      "pdb_id": "3ECK",
+      "system_id": "3eck__1__1.D__1.Q_1.S",
+      "ligand_id": "1.S",
+      "method": "VINA",
+      "apo_pdb_id": "2IG9",
+      "apo_chain": "A",
+      "metal": "Fe",
+      "resolution_A": 1.6,
+      "protein_name": "Homoprotocatechuate 2,3-dioxygenase (E323L)",
+      "ligand_ccd_code": "XXG",
+      "metadata_sources": {
+        "protein_name_and_resolution": "https://www.rcsb.org/structure/3ECK"
+      }
+    }
+  ]
+}

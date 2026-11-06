@@ -1,0 +1,16 @@
+{
+  "files": {
+    "grouped_metrics": "plot_repro_grouped_metrics.csv",
+    "external_baselines": "plot_repro_external_baselines.csv",
+    "prediction_quality_scatter": "plot_repro_prediction_quality_scatter.csv",
+    "prediction_quality_corr": "plot_repro_prediction_quality_corr.csv",
+    "prediction_quality_cutoff": "plot_repro_prediction_quality_cutoff.csv"
+  },
+  "notes": {
+    "grouped_metrics": "flattened aggregate metrics used in clean summary plots",
+    "external_baselines": "baseline-only method stats (coverage/MBG/RMSD)",
+    "prediction_quality_scatter": "raw pointwise predicted vs true MBG RMSD",
+    "prediction_quality_corr": "per-system Pearson correlations",
+    "prediction_quality_cutoff": "cutoff-dependent coverage/retention/theoretical limits"
+  }
+}

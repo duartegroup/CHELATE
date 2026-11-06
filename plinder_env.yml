@@ -1,0 +1,19 @@
+name: plinder_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.11
+  - biopython
+  - biotite
+  - matplotlib
+  - pandas
+  - rdkit==2023.9.5
+  - seaborn
+  - networkit
+  - matplotlib-venn
+  - numpy
+  - pip
+  - pip:
+    - plinder==0.2.20 # Pinned to the version used to build this dataset; issue #94 remains open.
+    - ost

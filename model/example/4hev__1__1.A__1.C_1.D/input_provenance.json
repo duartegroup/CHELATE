@@ -1,0 +1,42 @@
+{
+  "system_id": "4hev__1__1.A__1.C_1.D",
+  "ligand_id": "1.D",
+  "docking_program": "VINA",
+  "docking_run_id": 1,
+  "receptor": "Cross-docking receptor of the benchmark (apo 2IMC chain A), converted from its prepared PDBQT with Open Babel",
+  "receptor_pdbqt_sha256": "f2d7c9a9d1a2c7e5258f3757fa3d480c37a5b6843878d44e7ba70cceec483c27",
+  "example_files_sha256": {
+    "Apo_receptor_prepared.pdb": "e7b796ee4aaad22740ef70a2f1bd55d00515f3f4e35cfa850720b1341406c609",
+    "Apo_receptor_prepared.pdb.provenance.json": "08d0452e77fc076c24a1d63e7c3501533a72e15473e107b72f8d0a6b0562b8d7",
+    "VINA_crossdocked.sdf": "e6a29bbd2f283e2d64b511d82817f73b88206a4afa1f7eaa45989944432f7c3d",
+    "1.D_crystal.sdf": "2c0147e693103c8a63d93b6388f28db81fd5a5b59893095af538ecfa7773c479"
+  },
+  "receptor_audit": {
+    "defective": false,
+    "source_atom_groups_expected": 3240,
+    "source_atom_groups_retained": 3240,
+    "missing_protein_atoms": 0,
+    "missing_metal_atoms": 0,
+    "missing_other_atoms": 0,
+    "target_ligand_atoms_present": 0,
+    "ignored_source_atoms": {},
+    "coordinate_tolerance": 0.01,
+    "docking_box": {
+      "center_x": -3.208000123500824,
+      "center_y": -6.450500130653381,
+      "center_z": 21.664999961853027,
+      "size_x": 11.276000142097473,
+      "size_y": 14.115000486373901,
+      "size_z": 12.974000930786133
+    },
+    "binding_site_interaction_cutoff": 8.0,
+    "binding_site_missing_atoms": 0,
+    "binding_site_missing_protein_atoms": 0,
+    "binding_site_missing_metal_atoms": 0,
+    "binding_site_missing_other_atoms": 0,
+    "missing_atoms_outside_binding_site": 0,
+    "nearest_missing_atom_distance_to_box": null,
+    "nearest_outside_missing_atom_distance_to_box": null,
+    "whole_protein_defective": false
+  }
+}

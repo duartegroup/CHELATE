@@ -1,0 +1,9 @@
+{
+  "docking_program": "VINA",
+  "rmsd_cutoff": 1.0,
+  "learning_rate": 0.18620047412336777,
+  "depth": 7,
+  "iterations": 959,
+  "smooth_k": 1.1892779284956347,
+  "smooth_p": 1.7826994877986575
+}

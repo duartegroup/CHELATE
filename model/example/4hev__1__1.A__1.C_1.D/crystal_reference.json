@@ -1,0 +1,20 @@
+{
+  "system_id": "4hev__1__1.A__1.C_1.D",
+  "ligand_id": "1.D",
+  "coordinate_frame": "Original holo/reference ligand Cartesian frame",
+  "metal_coords": [
+    [
+      -4.759,
+      -2.286,
+      22.341
+    ]
+  ],
+  "metal_symbols": [
+    "Zn"
+  ],
+  "mbg_definition": "Reference ligand N/O/S atoms within 3.5 A of the original holo metals, matching the benchmark labels",
+  "crystal_sha256": "2c0147e693103c8a63d93b6388f28db81fd5a5b59893095af538ecfa7773c479",
+  "source_annotations": "data_curation/cached_data/metal_ligand_data_distTresh=4.0_mwThresh=750.0_goodApoThresh=70.0_resplit.json",
+  "source_annotations_sha256": "87276f9dd9d58d6329a9f46286b9cf6de3f18326a8a3d69881a1fd2627f5b530",
+  "periodic_boundary_conditions": false
+}

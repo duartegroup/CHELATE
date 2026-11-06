@@ -1,0 +1,168 @@
+{
+  "rule": "A pair is excluded if its receptor contains target-ligand atoms or a source heavy atom is missing within 8 A of the docking box (ligand extent plus 4 A).",
+  "summary": [
+    {
+      "method": "VINA",
+      "split": "train",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 4083,
+      "excluded": 472,
+      "retained": 3611,
+      "retained_with_distant_defects": 158,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 431,
+        "no_prepared_receptor": 41
+      }
+    },
+    {
+      "method": "VINA",
+      "split": "val",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 1073,
+      "excluded": 120,
+      "retained": 953,
+      "retained_with_distant_defects": 46,
+      "exclusion_reasons": {
+        "no_prepared_receptor": 11,
+        "all_available_receptors_fail_binding_site_or_preparation_check": 109
+      }
+    },
+    {
+      "method": "VINA",
+      "split": "test",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 156,
+      "excluded": 14,
+      "retained": 142,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 14
+      }
+    },
+    {
+      "method": "VINA",
+      "split": "test",
+      "docking_type": "apo_docked_FH",
+      "curated_pairs": 156,
+      "excluded": 23,
+      "retained": 133,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 23
+      }
+    },
+    {
+      "method": "SMINA",
+      "split": "train",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 4083,
+      "excluded": 472,
+      "retained": 3611,
+      "retained_with_distant_defects": 158,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 431,
+        "no_prepared_receptor": 41
+      }
+    },
+    {
+      "method": "SMINA",
+      "split": "val",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 1073,
+      "excluded": 120,
+      "retained": 953,
+      "retained_with_distant_defects": 46,
+      "exclusion_reasons": {
+        "no_prepared_receptor": 11,
+        "all_available_receptors_fail_binding_site_or_preparation_check": 109
+      }
+    },
+    {
+      "method": "SMINA",
+      "split": "test",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 156,
+      "excluded": 14,
+      "retained": 142,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 14
+      }
+    },
+    {
+      "method": "SMINA",
+      "split": "test",
+      "docking_type": "apo_docked_FH",
+      "curated_pairs": 156,
+      "excluded": 23,
+      "retained": 133,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 23
+      }
+    },
+    {
+      "method": "GNINA",
+      "split": "train",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 4083,
+      "excluded": 472,
+      "retained": 3611,
+      "retained_with_distant_defects": 158,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 431,
+        "no_prepared_receptor": 41
+      }
+    },
+    {
+      "method": "GNINA",
+      "split": "val",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 1073,
+      "excluded": 120,
+      "retained": 953,
+      "retained_with_distant_defects": 46,
+      "exclusion_reasons": {
+        "no_prepared_receptor": 11,
+        "all_available_receptors_fail_binding_site_or_preparation_check": 109
+      }
+    },
+    {
+      "method": "GNINA",
+      "split": "test",
+      "docking_type": "redocked_FH",
+      "curated_pairs": 156,
+      "excluded": 14,
+      "retained": 142,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 14
+      }
+    },
+    {
+      "method": "GNINA",
+      "split": "test",
+      "docking_type": "apo_docked_FH",
+      "curated_pairs": 156,
+      "excluded": 23,
+      "retained": 133,
+      "retained_with_distant_defects": 7,
+      "exclusion_reasons": {
+        "all_available_receptors_fail_binding_site_or_preparation_check": 23
+      }
+    }
+  ],
+  "cohort_files": {
+    "GNINA_test.csv": "6b85eaa5709dbac4f707227cb483d57b81c2e1f227890bb8b3761c5a7fc2d2d5",
+    "GNINA_train.csv": "7a4627e05da741aa1696ed052ce217ab4d23a1923afe264eda9a6e925a121576",
+    "GNINA_val.csv": "ae8bf56e38f0ad11015400f3717d0dd0b22a6ecf39cdcd4ff25d293a8d2ae3e2",
+    "SMINA_test.csv": "706005d0b1cfc7f2d49551025068521c7a62c1825795bf385f95f042dd1e6439",
+    "SMINA_train.csv": "634ae65b54bcca665789441084c909d8bf985091a6f1e4ca131f8e10378eacb2",
+    "SMINA_val.csv": "66554a7cb60f3a8b7886edb6c36e4c45e1c95608d71f129eccb7f37c404ab6f2",
+    "VINA_test.csv": "15b3842288a246cbf4e82e62272a7b186ccc82b35394474f94ce9c2d2bc8a466",
+    "VINA_train.csv": "1768b7d1b5e39a604e421588864f28ce8c6be31b6fa3293f3fa0d840621edde1",
+    "VINA_val.csv": "1f5b93203ff571b09152cfbbf21ef89def0fc48d0ac52253b9937e8e8d8d214f"
+  },
+  "model_results_read": false,
+  "gnina_box": "Explicit crystal-ligand extent plus 4 A per side, with the default autobox_extend expansion for input-conformer rotation."
+}

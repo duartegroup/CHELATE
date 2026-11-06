@@ -1,0 +1,101 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chelate"
+version = "0.1.0"
+description = "CHELATE: High-precision docking for metalloproteins."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["docking", "protein", "cheminformatics"]
+
+# Minimal installable dependencies for docking and re-ranking. Lower bounds are the
+# versions pinned in docking_env.yml, in which the models were trained and evaluated.
+# A fresh install with pandas 3.1, numpy 2.4, rdkit 2026.09, meeko 0.8 and CatBoost
+# 1.2.10 gives identical predictions for the 4HEV example.
+dependencies = [
+    "numpy",
+    "pandas>=2.1.4",
+    "scipy>=1.15.2",
+    "rdkit>=2024.3.5",
+    # Vina and Smina write PDBQT; converting it back to RDKit needs meeko.
+    "meeko>=0.6.1",
+    # meeko>=0.7 imports gemmi but does not declare it as a pip dependency.
+    "gemmi",
+    # The bundled .cbm models need a CatBoost 1.x reader.
+    "catboost>=1.2,<2",
+]
+
+[project.optional-dependencies]
+# Symmetry-corrected RMSD against a crystal reference, for benchmarking only.
+eval = ["spyrmsd>=0.9.0"]
+# Plotting for the example notebook. PyMOL is conda-only and is not listed here;
+# install it with `conda install -c conda-forge pymol-open-source` if you want the
+# structure renders.
+viz = ["matplotlib", "ipython"]
+all = ["chelate[eval,viz]"]
+# scikit-learn: model/model_utils.py, imported by the cutoff-selection tests.
+test = ["chelate[eval]", "pytest", "scikit-learn"]
+
+[tool.setuptools]
+# Only the package ships; docking/, model/ and data_curation/ stay repo-local scripts.
+packages = ["chelate", "chelate.params"]
+
+[tool.setuptools.package-data]
+"chelate.params" = ["*.cbm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The tests of the repo-local model/ scripts import them as the `model` package.
+pythonpath = ["."]
+
+[tool.coverage.run]
+# Measure the *imported* package. CI tests a non-editable install, so `--cov=chelate`
+# would be read as the local ./chelate directory, which is never executed, and report
+# no data. Naming the package instead covers it wherever it is installed.
+source_pkgs = ["chelate"]
+
+[tool.ruff]
+target-version = "py311"
+exclude = ["build", "dist", "*.egg-info"]
+
+[tool.ruff.lint]
+# Pinned so that "ruff clean" means the same thing for everyone and does not drift with
+# the ruff version. On top of the pycodestyle/pyflakes defaults: import sorting (I),
+# pyupgrade (UP), bugbear (B), comprehensions (C4), simplify (SIM) and ruff's own rules.
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "C4", "SIM", "RUF"]
+
+# Deliberately not enabled, after checking every occurrence:
+#   BLE001  blind `except Exception` — the pipeline scripts use these on purpose so one
+#           bad system cannot abort a multi-hour run; the failure is always recorded.
+#   PLW1510 `subprocess.run` without `check` — return codes are inspected by hand.
+#   LOG015  root-logger calls — the curation scripts log through the root logger.
+#   S110    try/except/pass — used to skip unparseable records.
+ignore = [
+    # Ambiguous-unicode checks. The docstrings legitimately contain Å, τ and en/em
+    # dashes; flagging those as confusable characters is noise for this codebase.
+    "RUF001",
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Setting CUDA_VISIBLE_DEVICES must happen before CatBoost is imported.
+"model/train_model.py" = ["E402"]
+# Plotting notebooks and builders that produce the paper's figures. They are kept as
+# close as possible to the code that made the published figures, so style-only rules
+# are not enforced here; pyflakes, import sorting and formatting still are.
+"figures/**" = [
+    "B023",
+    "B905",
+    "C408",
+    "E402",
+    "E712",
+    "E731",
+    "E741",
+    "RUF046",
+    "RUF059",
+    "SIM115",
+]

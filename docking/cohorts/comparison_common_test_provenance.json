@@ -1,0 +1,144 @@
+{
+  "created": "2026-10-27T18:20:08.805480+01:00",
+  "rule": "Identity and fixed-denominator rules for fair method comparisons.\n\nThe comparison cohort depends only on input and label availability, never on\nRMSD success thresholds, predictions or selected operating cutoffs.",
+  "intersection": "All engines, both scenarios and all three repeats; valid native score and RMSD labels, without success thresholds or predictions",
+  "n_pairs": 118,
+  "input_sha256": {
+    "features_test_VINA_redocked_FH_id=1.csv": "812769912e5d68f49420436fe122c4d2b2334e3d77d0f4b3011bbc1d17573d5d",
+    "features_test_VINA_redocked_FH_id=2.csv": "bb71299bc69eaa78f3b80de6782c25d39447610d2f24a007fd2e49721dba96fd",
+    "features_test_VINA_redocked_FH_id=3.csv": "f7acdf6bd2dfecedfa96321077c50bc222d968ccd9d85a9beef0bf355202b7f5",
+    "features_test_VINA_apo_docked_FH_id=1.csv": "c0be572a0dc79899574d395a37c6b3b624a3c898dd1c81c07152bc336a690d3c",
+    "features_test_VINA_apo_docked_FH_id=2.csv": "2288fd768dd4902f30f473b0f9ace3fef45135a9792482f493b8bc22448801fb",
+    "features_test_VINA_apo_docked_FH_id=3.csv": "8010e247a939959a3cd0152e84f08c163542d96b306bb717007cbf7a7a34d041",
+    "features_test_SMINA_redocked_FH_id=1.csv": "36e05db92c1981628448dd9b10d9a677cb29140f90b8eb4e06aaeb4cb580c177",
+    "features_test_SMINA_redocked_FH_id=2.csv": "b0742979ea34ad7f051b6dda58de2011ba9d458341c7de4513e6b77ae21f8205",
+    "features_test_SMINA_redocked_FH_id=3.csv": "9a5cf82fb216460009771e6703179d2256c0a41e7f11292e9533441fdd295c81",
+    "features_test_SMINA_apo_docked_FH_id=1.csv": "49a3e93352f556df69a546d39d2f68c915ed5d16ae50d8855b549e9580c34d93",
+    "features_test_SMINA_apo_docked_FH_id=2.csv": "84c78d1842ab7b044489bede89b883e3475eb05af16fad75c2ae0dd7a27e146a",
+    "features_test_SMINA_apo_docked_FH_id=3.csv": "2838ed20e8427a60f7c19a4f0bd290f45054b73b05dc9f1eec5232736e14848c",
+    "features_test_GNINA_redocked_FH_id=1.csv": "8b908660babb734522c7b05c7247a426709cdb1c86b29ba23a9a5a9b20585659",
+    "features_test_GNINA_redocked_FH_id=2.csv": "cb16ee6a10091dde9862c726a17c2e460f516ebc4958a61229bbc5de90a649e8",
+    "features_test_GNINA_redocked_FH_id=3.csv": "90b14899710b730ec1efadfdd21884a7dfd3c491159d624acd43c9899db94c74",
+    "features_test_GNINA_apo_docked_FH_id=1.csv": "a7e3e67e3143b2500303239d692eeaa0e464ef4826843646a10e01308b7b0038",
+    "features_test_GNINA_apo_docked_FH_id=2.csv": "3c4cf98d5212af80dce8eee95f659af1ef3286919c4c0c9ee12b6523060a3ff9",
+    "features_test_GNINA_apo_docked_FH_id=3.csv": "280f8c540a2fadef7b69696b9ee935b835e0930f245834ea378cd163152721eb"
+  },
+  "input_populations": [
+    {
+      "method": "VINA",
+      "scenario": "redocked_FH",
+      "repeat": 1,
+      "eligible_pairs": 137
+    },
+    {
+      "method": "VINA",
+      "scenario": "redocked_FH",
+      "repeat": 2,
+      "eligible_pairs": 137
+    },
+    {
+      "method": "VINA",
+      "scenario": "redocked_FH",
+      "repeat": 3,
+      "eligible_pairs": 137
+    },
+    {
+      "method": "VINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 1,
+      "eligible_pairs": 130
+    },
+    {
+      "method": "VINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 2,
+      "eligible_pairs": 130
+    },
+    {
+      "method": "VINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 3,
+      "eligible_pairs": 130
+    },
+    {
+      "method": "SMINA",
+      "scenario": "redocked_FH",
+      "repeat": 1,
+      "eligible_pairs": 135
+    },
+    {
+      "method": "SMINA",
+      "scenario": "redocked_FH",
+      "repeat": 2,
+      "eligible_pairs": 135
+    },
+    {
+      "method": "SMINA",
+      "scenario": "redocked_FH",
+      "repeat": 3,
+      "eligible_pairs": 135
+    },
+    {
+      "method": "SMINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 1,
+      "eligible_pairs": 128
+    },
+    {
+      "method": "SMINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 2,
+      "eligible_pairs": 128
+    },
+    {
+      "method": "SMINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 3,
+      "eligible_pairs": 128
+    },
+    {
+      "method": "GNINA",
+      "scenario": "redocked_FH",
+      "repeat": 1,
+      "eligible_pairs": 141
+    },
+    {
+      "method": "GNINA",
+      "scenario": "redocked_FH",
+      "repeat": 2,
+      "eligible_pairs": 141
+    },
+    {
+      "method": "GNINA",
+      "scenario": "redocked_FH",
+      "repeat": 3,
+      "eligible_pairs": 141
+    },
+    {
+      "method": "GNINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 1,
+      "eligible_pairs": 132
+    },
+    {
+      "method": "GNINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 2,
+      "eligible_pairs": 132
+    },
+    {
+      "method": "GNINA",
+      "scenario": "apo_docked_FH",
+      "repeat": 3,
+      "eligible_pairs": 132
+    }
+  ],
+  "cohort_sha256": "3eed7e1ddd8dee72e52e2ef37022ae41aa12e7bd1b661de091558ff8a0dfcb1e",
+  "model_outputs_read": false,
+  "prediction_cutoffs_read": false,
+  "receptor_cohort_sha256": {
+    "VINA": "15b3842288a246cbf4e82e62272a7b186ccc82b35394474f94ce9c2d2bc8a466",
+    "SMINA": "706005d0b1cfc7f2d49551025068521c7a62c1825795bf385f95f042dd1e6439",
+    "GNINA": "6b85eaa5709dbac4f707227cb483d57b81c2e1f227890bb8b3761c5a7fc2d2d5"
+  }
+}

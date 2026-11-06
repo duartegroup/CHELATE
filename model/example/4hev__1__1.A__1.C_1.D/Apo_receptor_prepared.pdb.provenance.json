@@ -1,0 +1,12 @@
+{
+  "schema": "chelate-receptor-pdb-v1",
+  "source_pdbqt": "4hev__1__1.A__1.C_1.D__2imc_A_merged_1.D.pdbqt",
+  "source_pdbqt_sha256": "f2d7c9a9d1a2c7e5258f3757fa3d480c37a5b6843878d44e7ba70cceec483c27",
+  "pdb_sha256": "e7b796ee4aaad22740ef70a2f1bd55d00515f3f4e35cfa850720b1341406c609",
+  "command": [
+    "obabel",
+    "4hev__1__1.A__1.C_1.D__2imc_A_merged_1.D.pdbqt",
+    "-O",
+    "4hev__1__1.A__1.C_1.D__2imc_A_merged_1.D.pdb"
+  ]
+}

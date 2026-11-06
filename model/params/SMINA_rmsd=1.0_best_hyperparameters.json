@@ -1,0 +1,9 @@
+{
+  "docking_program": "SMINA",
+  "rmsd_cutoff": 1.0,
+  "learning_rate": 0.12613871799051543,
+  "depth": 6,
+  "iterations": 477,
+  "smooth_k": 0.45513549749430654,
+  "smooth_p": 2.451047011659331
+}
