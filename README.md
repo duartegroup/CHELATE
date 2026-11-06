@@ -125,7 +125,7 @@ Update the executable and PLINDER storage paths in [docking_params.py](docking/d
 
 ## Dataset
 
-The full PLINDER dataset is hundreds of GB large, and all curation steps can take a long time. The precurated dataset, all docking poses, the trained models and the figure inputs are available from Zenodo (DOI: added on publication). The archive contains this repository as `working_package/`, with the curated files under `working_package/data_curation/cached_data/` and the docked systems under `working_package/docking/`.
+The full PLINDER dataset is hundreds of GB large, and all curation steps can take a long time. The precurated dataset, all docking poses, the trained models and the figure inputs are available from Zenodo (DOI: [10.5281/zenodo.24013764](https://doi.org/10.5281/zenodo.24013764)). The archive contains this repository as `working_package/`, with the curated files under `working_package/data_curation/cached_data/` and the docked systems under `working_package/docking/`.
 
 
 Alternatively, you can generate it yourself by downloading the PLINDER dataset and running [generate_dataset.py](data_curation/generate_dataset.py)
